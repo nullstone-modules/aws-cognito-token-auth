@@ -1,0 +1,15 @@
+org_name: nullstone
+name: aws-cognito-token-auth
+friendly_name: AWS Cognito Token Auth
+description: Injects the user pool and client ids so that you can authenticate users in a cognito user pool.
+category: capability
+subcategory: datastores
+provider_types:
+    - aws
+platform: cognito
+subplatform: ""
+type: ""
+appCategories:
+    - container
+    - serverless
+is_public: true
