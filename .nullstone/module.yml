@@ -12,4 +12,5 @@ type: ""
 appCategories:
     - container
     - serverless
+    - static-site
 is_public: true
