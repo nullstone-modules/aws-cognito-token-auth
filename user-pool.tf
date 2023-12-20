@@ -4,10 +4,10 @@ data "ns_connection" "user-pool" {
 }
 
 locals {
-  user_pool_id  = data.ns_connection.user-pool.outputs.user_pool_id
-  client_id     = data.ns_connection.user-pool.outputs.client_id
-  web_client_id = data.ns_connection.user-pool.outputs.web_client_id
-  access_key_id_secret_id = data.ns_connection.user-pool.outputs.access_key_id_secret_id
+  user_pool_id                = data.ns_connection.user-pool.outputs.user_pool_id
+  client_id                   = data.ns_connection.user-pool.outputs.client_id
+  identity_pool_id            = data.ns_connection.user-pool.outputs.identity_pool_id
+  access_key_id_secret_id     = data.ns_connection.user-pool.outputs.access_key_id_secret_id
   secret_access_key_secret_id = data.ns_connection.user-pool.outputs.secret_access_key_secret_id
 }
 

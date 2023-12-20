@@ -9,8 +9,8 @@ output "env" {
       value = local.client_id
     },
     {
-      name  = "COGNITO_WEB_CLIENT_ID"
-      value = local.web_client_id
+      name  = "COGNITO_IDENTITY_POOL_ID"
+      value = local.identity_pool_id
     }
   ]
 }
