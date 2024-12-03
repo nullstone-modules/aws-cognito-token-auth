@@ -18,6 +18,10 @@ output "env" {
 output "secrets" {
   value = [
     {
+      name  = "COGNITO_CLIENT_SECRET"
+      value = try(data.aws_secretsmanager_secret_version.client_secret[0].secret_string, "")
+    },
+    {
       name  = "COGNITO_ACCESS_KEY_ID"
       value = data.aws_secretsmanager_secret_version.access_key_id.secret_string
     },
